@@ -130,7 +130,7 @@
         }
         ul { padding-left: 20px; margin-top: 10px; }
         li { margin-bottom: 8px; font-size: 0.95rem; }
-        /* İLETİŞİM İKONLARI */
+        /* İLETİŞİM İKONLARI VE LİNKLER */
         .contact-item {
             display: flex;
             align-items: center;
@@ -144,6 +144,14 @@
             width: 20px;
             text-align: center;
             font-style: normal;
+        }
+        .contact-item a {
+            color: var(--yazi-rengi);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        .contact-item a:hover {
+            color: var(--canli-mavi);
         }
         footer {
             background-color: var(--koyu-mavi);
@@ -247,13 +255,16 @@
             <div class="aside-card" id="iletisim">
                 <h2>İletişim</h2>
                 <div class="contact-item">
-                    <i>📧</i> kocakegemen2001@gmail.com
+                    <i>📧</i> <a href="mailto:kocakegemen2001@gmail.com">kocakegemen2001@gmail.com</a>
                 </div>
                 <div class="contact-item">
-                    <i>📱</i> +90 553 965 05 27
+                    <i>📱</i> <a href="tel:+905539650527">+90 553 965 05 27</a>
                 </div>
                 <div class="contact-item">
-                    <i>🔗</i> linkedin.com/in/egemen-koçak
+                    <i>🔗</i> <a href="https://linkedin.com/in/egemen-koçak" target="_blank">linkedin.com/in/egemen-koçak</a>
+                </div>
+                <div class="contact-item">
+                    <i>💻</i> <a href="https://github.com/eqemenkocak" target="_blank">github.com/eqemenkocak</a>
                 </div>
             </div>
         </aside>
